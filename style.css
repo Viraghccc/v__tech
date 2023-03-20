@@ -1,0 +1,659 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: black ;
+}
+
+nav {
+    background: #505050;
+    padding: 3px 20px;
+    justify-content: space-between;
+    color: white;
+    position: fixed;
+    top: 1;
+    width: 100%;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo img{
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 2%;
+    text-decoration: none;
+}
+
+.menu .item a {
+    color: white;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.menu .item:after {
+    display: block;
+    content: "";
+    border-top: 2px solid rgb(3, 218, 226);
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    -webkit-transition: transform 250ms ease-in-out;
+    -moz-transition: transform 250ms ease-in-out;
+    -ms-trantition:transform 250ms ease-in-out;
+    -o-transition: transform 250ms ease-in-out;
+}
+
+.menu .item:hover:after{
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+}
+
+.menu .item a:hover{
+    filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+}
+
+.menu li{
+    font-size: 17px;
+    padding: 15px 5px;
+    white-space: nowrap;
+}
+
+.toggle a{
+    font-size: 20px;
+}
+
+.button .secondary {
+    border-bottom: 1px #444 solid;
+}
+
+/* többi */
+
+.auto {
+    float: right;
+    padding: 450px 0;
+}
+
+.auto img{
+    width: 1000px;
+    height: 650px;
+}
+
+
+.oldal {
+    padding: 300px 200px;
+    background-image: url(img/Untitled-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.oldal h2{
+    font-size: 180%;
+    color: white;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}
+
+.oldal h1 {
+    padding: 20px 0;
+    color: white;
+    font-size: 300%;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    letter-spacing: 8px;
+}
+
+.multiText {
+    color: rgb(3, 218, 226);
+}
+
+.oldal p{
+    font-size: 120%;
+    padding: 50px 0;
+    color: white;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+}
+
+.katt{
+    background-color: black;
+    width: 250px;
+    height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    border-color: rgb(3, 218, 226);
+    font-weight: 300;
+    border-radius: 10px;
+}
+
+.katt a{
+    color: white;
+    letter-spacing: 2px;
+}
+
+.katt:hover {
+    box-shadow: 0 2px 35px 0  rgb(3, 218, 226);
+    transition: 0.5s;
+}
+
+.face{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-color: rgb(3, 218, 226);
+    border-radius: 150px;
+}
+
+.face a{
+    font-size: 150%;
+    color: rgb(3, 218, 226);
+}
+
+.wrapper img{
+    width: 60px;
+}
+
+.wrapper{
+    padding: 40px 0;
+}
+
+.wrapper a{
+    padding: 0 10px;
+}
+
+.jarmu {
+    display: inline block;
+    float: left;
+    border-radius: 5%;
+    margin-left: 100px;
+    margin-right: 100px;
+    top: 20%;
+    transition: 1s;
+}
+
+.jarmu img{
+    width: 500px;
+    height: 650px;
+    border-radius: 20px;
+}
+
+
+
+.jarmu .auto{
+    padding: 0px 0px;
+    display: inline block;
+    float: left;
+}
+
+.jarmu img:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    box-shadow: 0 0 30px  0 rgb(3, 218, 226);
+    transition: 0.5s;
+}
+
+
+.jarmu .motor{
+    padding: 0 100px;
+    display: inline block;
+    float: left;
+}
+
+.jarmu .motor:hover {
+    transform: scale(1);
+    z-index: 1;
+}
+
+.jarmu .kamion{
+    padding: 0 0px;
+    display: inline block;
+    float: left;
+}
+
+.jarmu .kamion:hover {
+    transform: scale(1);
+    z-index: 1;
+}
+
+.iras p{
+    padding: 110px 0;
+    font-size: 65px;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    letter-spacing: 10px;
+}
+
+.epulet img{
+    margin-left: 150px;
+    margin-top: 200px;
+    float: left;
+    border-radius: 20px;
+}
+
+.szoveg{
+    background: white;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    width: 1000px;
+    height: 500px;
+    float: right;
+    margin-right: 150px;
+    margin-top: 200px;
+}
+
+.szoveg p{
+    margin-top: 70px;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    word-spacing: 10px;
+}
+
+.boss img{
+    margin-right: 150px;
+    float: right;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+
+.bos {
+    background: white;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    width: 1000px;
+    height: 500px;
+    float: left;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+.bos p{
+    margin-top: 70px;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    word-spacing: 10px;
+}
+
+.container {
+    padding: 150px 0;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.search-bar{
+    background-color: white;
+    border-radius: 60px;
+    padding: 20px 20px;
+    
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+}
+
+.termekek {
+    display: inline block;
+    float: left;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+.termekek img{
+    width: 300px;
+    border-radius: 20px;
+}
+
+.termekek .szuro{
+    padding: 0px 0px;
+    display: inline block;
+    float: left;
+    cursor: pointer;
+
+}
+
+.termekek .motor{
+    padding: 0 150px;
+    display: inline block;
+    float: left;
+    cursor: pointer;
+}
+
+.termekek .fek{
+    padding: 0 0px;
+    display: inline block;
+    float: left;
+    cursor: pointer;
+}
+
+.termekek p{
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.termekek .olaj{
+    padding: 0px 0px;
+    display: inline block;
+    float: left;
+    cursor: pointer;
+
+}
+
+.termekek .cso{
+    padding: 0px 150px;
+    display: inline block;
+    float: left;
+    cursor: pointer;
+    
+}
+
+/* Mobile menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .toggle {
+    order: 1;
+  }
+  .item.button {
+    order: 2;
+  }
+  .item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+  }
+  .item.active {
+    display: block;
+  }
+
+  
+  
+  /* Navbar Toggle */
+  .toggle {
+    cursor:pointer;
+  }
+  .bars {
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  .bars:before,
+  .bars:after {
+    background: #999;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  .bars:before {
+    top: 5px;
+  }
+  .bars:after {
+    top: -5px;
+  }
+  
+  /* Tablet menu */
+  @media all and (min-width:350px){
+    
+    
+    .menu {
+        justify-content: center;    
+    }
+
+    .logo {
+        flex: 1;
+    }
+  
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toggle {
+        order: 2;
+    }
+    .button.secondary {
+        border: 0;
+    }
+    .button a {
+        padding: 7.5px 15px;
+        background: teal;
+        border: 1px #006d6d solid;
+        border-radius:50em;
+    }
+    .button.secondary a {
+        background: transparent;    
+    }
+    .button a:hover {
+        text-decoration: none;
+        transition:all .25s;
+    }
+    .button:not(.secondary) a:hover {
+        background: #006d6d;
+        border-color: #005959;
+    }
+    .button.secondary a:hover {
+        color: #ddd;
+    } 
+    
+    .oldal {
+        padding: 150px 50px;
+        background-image: url(Untitled-2.jpg);
+    }
+
+    .oldal h2{
+        font-size: 100%;
+
+    }
+
+    .oldal h1 {
+        padding: 20px 0;
+        font-size: 200%;
+        word-spacing: 0px;
+        letter-spacing: 3px;
+    }
+
+    .oldal p{
+        padding: 20px 0;
+        font-size: 80%;
+    }
+    
+    .katt{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .elerhetoseg {
+        background-color: white;
+    }
+
+    .wrapper{
+        padding: 10px 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .wrapper img{
+        width: 50px;
+    }
+
+    .iras p{
+        font-size: 30px;
+    }
+
+    .jarmu {
+        display: inline block;
+        float: left;
+        border-radius: 5%;
+        margin-left: 35px;
+        margin-right: 35px;
+        transition: 1s;
+    }
+
+    
+    .jarmu img{
+        width: 300px;
+        height: 400px;
+        border-radius: 20px;
+    }
+    
+    .jarmu .auto{
+        display: inline block;
+    }
+    
+    .jarmu .motor{
+        padding: 20px 0;
+        display: inline block;
+    }
+    .jarmu .kamion{
+        padding: 0 0;
+        display: inline block;
+    }
+
+    
+
+} 
+  /* Desktop menu */
+  @media all and (min-width: 1069px){
+    .item {
+        display: block;
+        width: auto;
+    }
+
+    .toggle {
+        display: none;
+    }
+    .logo {
+        order: 0;
+    }
+    .item {
+        order: 1;
+    }
+    .button {
+        order: 1;
+    }
+    .menu li {
+        padding: 15px 10px;
+    }
+    .menu li.button {
+        padding-right: 0;
+    }
+
+    .oldal {
+        padding: 300px 200px;
+        background-image: url(img/Untitled-1.jpg);
+    }
+
+    .oldal h2{
+        font-size: 180%;
+    }
+
+    .oldal h1 {
+        padding: 30px 0;
+        font-size: 300%;
+    }
+
+    .oldal p{
+        font-size: 110%;
+        padding: 30px 0;
+    }
+
+    .jarmu .iras p{
+        font-size: 50px;
+    }
+
+    .jarmu {
+        display: inline block;
+        float: left;
+        border-radius: 5%;
+        margin-left: 100px;
+        margin-right: 100px;
+        top: 20%;
+        transition: 1s;
+    }
+    
+    .jarmu img{
+        width: 450px;
+        height: 600px;
+        border-radius: 20px;
+    }
+    
+    .jarmu .auto{
+        padding: 0px 0px;
+        display: inline block;
+        float: left;
+    }
+    
+    
+    .jarmu .motor{
+        padding: 0 175px;
+        display: inline block;
+        float: left;
+    }
+    
+    .jarmu .kamion{
+        padding: 0 0px;
+        display: inline block;
+        float: left;
+    }
+
+    .iras p{
+        padding: 110px 0;
+        font-size: 50px;
+        text-align: center;
+        font-weight: bolder;
+        color: white;
+        letter-spacing: 10px;
+    }
+}
+

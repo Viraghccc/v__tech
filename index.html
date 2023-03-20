@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.boostrapcdn.com/font-awesome/4.7.0/css/
+    font-awesome.min.css">
+    <title>V-Tech</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(".toggle").on("click", function () {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="index.html"><img src="img/LOGO.png" alt=""></a></li>
+                <li class="item"><a href="index.html">Főoldal</a></li>
+                <li class="item"><a href="alkatreszek.html">Alkatrészek</a></li>
+                <li class="item"><a href="rolunk.html">Rólunk</a></li>
+                </li>
+                <li class="toggle"><span class="bars"></span></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="oldal">
+        <h2>Üdvözlünk az oldalon!</h2>
+        <h1>Találd meg  a <span class="multiText">megfelelő alkatrészt!</span> </h1>
+        <p>Oldalunkon megfelelő minőségű termékeket talál. Akár autóhoz, motorhoz vagy tehergépjárműhöz
+            is megtalálja a számára tökéleteset.
+        </p>
+        <button class="katt"><a href="#">Elérhetőségek</a></button>
+        <br>
+        <br>
+        <br>
+        <div class="wrapper">
+            <a href="https://www.facebook.com/" target="blank" ><img src="elerhetoseg/facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/" target="blank" ><img src="elerhetoseg/instagram (1).png" alt=""></a>
+            <a href="https://accounts.google.com/ServiceLogin/
+            signinchooser?service=mail&passive=1209600&osid=
+            1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=
+            https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&ifkv=
+            AWnogHf1GZtmZkPKok18LfCpErSDVnK0BJvwenngk_Ge8Y1SM49f09638UcZTrjtv5vOhFYtb8PlMg&flowName=
+            GlifWebSignIn&flowEntry=ServiceLogin" target="blank"><img src="elerhetoseg/gmail.png" alt=""></a>
+        </div>
+    </div>
+    <div class="elerhetoseg">
+        <p>Telefonszám: 06 20 256 9983</p>
+        <p>Email<a href="vtech@gmail.com">vtech@gmail.com</a></p>
+    </div>
+</body>
+
+</html>

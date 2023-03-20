@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.boostrapcdn.com/font-awesome/4.7.0/css/
+    font-awesome.min.css">
+    <title>V-Tech</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(".toggle").on("click", function () {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="index.html"><img src="img/LOGO.png" alt=""></a></li>
+                <li class="item"><a href="index.html">Főoldal</a></li>
+                <li class="item"><a href="alkatreszek.html">Alkatrészek</a></li>
+                <li class="item"><a href="rolunk.html">Rólunk</a></li>
+                </li>
+                <li class="toggle"><span class="bars"></span></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="iras">
+        <p>Válassza ki a járművet!</p>
+    </div>
+    <article class="jarmu">
+        
+        <div class="auto">
+            <a href="auto.html"><img src="img/AUTO.jpg" alt=""><p></p></a>    
+            
+        </div>
+        <div class="motor">
+            <a href="motor.html"><img src="img/motor2.jpg" alt=""></a>
+        </div>
+        <div class="kamion">
+            <a href="teherkocsi.html"><img src="img/kamion3.jpg" alt=""></a>
+        </div>
+    </article>
+</body>
+</html>
